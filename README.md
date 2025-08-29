@@ -110,4 +110,4 @@ outputs = llm
 
 ## License
 
-This repository’s integration code follows its own license. The underlying model’s usage is governed by the model’s license on Hugging Face. Review and comply with both before deploying in production.
+This repository’s integration code follows Trillion licence. 
