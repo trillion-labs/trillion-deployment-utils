@@ -6,7 +6,7 @@ setup(
     packages=["src"],
     entry_points={
         "vllm.general_plugins": [
-            "register_trillion_model = src:register"
+            "register_trillion_model = src.registry:register"
         ]
     }
 )
