@@ -2,6 +2,8 @@
 
 A lightweight, off‑the‑tree vLLM integration for the **`trillionlabs/Tri-70B-preview-SFT`** model. This README shows how to install the plugin, serve the model with vLLM, and call it using HTTP (OpenAI-compatible) and Python.
 
+For details regarding the `Tri-70B-preview-SFT` model, please checkout its [huggingface repo](https://huggingface.co/trillionlabs/Tri-70B-preview-SFT). 
+
 ---
 
 ## Table of Contents
@@ -19,8 +21,7 @@ A lightweight, off‑the‑tree vLLM integration for the **`trillionlabs/Tri-70B
 ## Prerequisites
 
 * **Python** 3.10+
-* **CUDA**-capable GPUs (recommended). CPU-only runs are not supported for a 70B-class model.
-* **Drivers/CUDA** suitable for your PyTorch build.
+* **CUDA**-capable GPUs (recommended). Our code has been tested mostly on H100 GPU.
 * **vLLM** `0.10.1.1` (other versions may work but are not guaranteed).
 
 > A 70B parameter model typically requires **multi‑GPU** setups. Ensure you have enough VRAM and set `--tensor-parallel-size` appropriately for your hardware.
